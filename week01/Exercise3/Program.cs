@@ -13,6 +13,7 @@ class Program
         Random random = new Random();
         int magicNumber = random.Next(1, 101);
         int guess = 0;
+        int attempts = 1;
         Console.WriteLine("Tell me, What is the magic number? ");
         do 
         { 
@@ -21,6 +22,19 @@ class Program
             if (guess == magicNumber)
             {
                 Console.WriteLine("You guessed the magic number!");
+                Console.WriteLine($"It took you {attempts} attempts.");
+                Console.Write("Do you want to play again? (y/n)");
+                string playAgain = Console.ReadLine();
+                if (playAgain == "y")
+                {
+                    magicNumber = random.Next(1, 101);
+                    attempts = 1;
+                    Console.WriteLine("Tell me, What is the magic number? ");
+                }
+                else
+                {
+                    Console.WriteLine("Thank you for playing!");
+                }
             }
             else if (guess > magicNumber)
             {
@@ -30,6 +44,7 @@ class Program
             {
                 Console.WriteLine("Your guess is too low.");
             }
+            attempts++;
         } while (magicNumber != guess);
     }
 }
