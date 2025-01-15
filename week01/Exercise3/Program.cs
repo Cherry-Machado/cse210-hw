@@ -10,12 +10,12 @@ class Program
         Console.WriteLine("Hello World! This is the Exercise3 Project.");
 
         Console.WriteLine("Welcome to the Guess My Number game!");
-        int magicNumber = 0;
+        Random random = new Random();
+        int magicNumber = random.Next(1, 101);
         int guess = 0;
+        Console.WriteLine("Tell me, What is the magic number? ");
         do 
         { 
-            Console.Write("What is the magic number? ");
-            magicNumber = int.Parse(Console.ReadLine());
             Console.Write("What is your guess? ");
             guess = int.Parse(Console.ReadLine());
             if (guess == magicNumber)
