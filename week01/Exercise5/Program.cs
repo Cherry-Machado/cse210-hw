@@ -8,11 +8,11 @@ class Program
         //Purpose: Working with Functions in C#.
         // This is a diferent way to write the code from Exercise5 week1, than the example one.
         // I just wanted to be creative and try to write the code in a different way.
-        
+
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
         Console.WriteLine("");
         DisplayWelcome();
-        DisplayResult("userName", 0);
+        DisplayResult("", 0);
 
         static void DisplayWelcome()
         {
