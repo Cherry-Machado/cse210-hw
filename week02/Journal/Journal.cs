@@ -35,7 +35,6 @@ public  class Journal
                 writer.WriteLine($" {entry._date}|{entry._promptText}|{entry._entryText}");
             }
         }
-        Console.WriteLine($"Journal saved to file {file}.");
     }
 
     public void LoadFromFile(string file)
