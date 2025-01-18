@@ -51,6 +51,8 @@ class Program
                     break;
                 case 3:
                     Console.WriteLine("What's the file name? ");
+                    string loadFileName = Console.ReadLine();
+                    myJournal.LoadFromFile(loadFileName);
                     break;
                 case 4:
                     Console.WriteLine("What's the file name? ");
