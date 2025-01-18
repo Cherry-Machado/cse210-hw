@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 class Program
 {
@@ -23,7 +24,7 @@ class Program
             switch (menu)
             {
                 case 1:
-                    Console.WriteLine("Write");
+                    Display();
                     break;
                 case 2:
                     Console.WriteLine("Display");
@@ -40,6 +41,10 @@ class Program
                 default:
                     Console.WriteLine($"Your option is incorrect. Please try again.");
                     break;
+                static void Display()
+                {
+                    Console.WriteLine("Display Journal");
+                }
             }
         } while (menu != 5);
         Journal theJournal = new Journal();
