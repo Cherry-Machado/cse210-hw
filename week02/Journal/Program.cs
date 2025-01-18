@@ -60,7 +60,7 @@ class Program
                     myJournal.SaveToFile(saveFileName);
                     break;
                 case 5:
-                    Console.WriteLine("Goodbye!");
+                    Console.WriteLine("Exiting the program. Goodbye!");
                     break;
                 default:
                     Console.WriteLine("Your option is incorrect. Please try again.");
