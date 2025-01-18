@@ -1,4 +1,6 @@
 using System;
+
+// Defines the structure of a journal entry.
 public class Entry
 {
     public string _date;
