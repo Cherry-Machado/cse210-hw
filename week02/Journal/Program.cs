@@ -2,6 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
+// Cherry Machado.
+// CSE 210: Programming with Classes.
+// This program allows the user to write, view, save, and load journal entries.
+// I showed  Creativity and Exceeding Requirements, by creating an DisplayMenu() Method to
+// create a Console, adding console clear, color, 
+// and Catching and Managing errors.
 class Program
 {
     public static void DisplayMenu(string[] menuOptions)
@@ -90,9 +96,6 @@ class Program
                 case 5:
                     Console.WriteLine("Exiting the program. Goodbye!");
                     break;
-                /*default:
-                    Console.WriteLine("Your option is incorrect. Please try again.");
-                    break;*/
             }
         } while (menu != 5);
         
