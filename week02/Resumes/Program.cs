@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Resumes Project.");
+        Console.WriteLine("Hello World! This is the Resume Project.");
         Console.WriteLine("");
 
         Job job1 = new Job();
