@@ -43,7 +43,7 @@ class Program
                             _entryText = userEntry
                         };
                         myJournal.AddEntry(newEntry);
-                        Console.Write("Press '1' to add another entry or any othe to exit");
+                        Console.Write("Press '1' to add another entry or any other to exit. ");
                     } while (Console.ReadLine() == "1");
                     break;
                 case 2:
@@ -54,6 +54,8 @@ class Program
                     break;
                 case 4:
                     Console.WriteLine("What's the file name? ");
+                    string saveFileName = Console.ReadLine();
+                    myJournal.SaveToFile(saveFileName);
                     break;
                 case 5:
                     Console.WriteLine("Goodbye!");
