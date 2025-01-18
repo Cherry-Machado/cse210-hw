@@ -40,6 +40,31 @@ public  class Journal
 
     public void LoadFromFile(string file)
     {
-        
+        if (!File.Exists(file))
+        {
+            Console.WriteLine($"File {file} not found.");
+            return;
+        }
+
+        using (StreamReader reader = new StreamReader(file))
+        {
+            string line;
+            while ((line = reader.ReadLine()) != null)
+            {
+                string[] parts = line.Split('|');
+                if (parts.Length == 3)
+                {
+                    Entry entry = new Entry
+                    {
+                        _date = parts[0],
+                        _promptText = parts[1],
+                        _entryText = parts[2]
+                    };
+                    _entries.Add(entry);
+                }
+                
+            }
+        }
+        Console.WriteLine($"Journal loaded from file {file}.");
     }
 }
