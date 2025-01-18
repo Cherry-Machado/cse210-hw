@@ -44,20 +44,16 @@ class Program
                         };
                         myJournal.AddEntry(newEntry);
                         Console.Write("Press '1' to add another entry or any othe to exit");
-                    } while (Console.ReadLine().ToLower() == "1");
+                    } while (Console.ReadLine() == "1");
                     break;
                 case 2:
-                    myJournal.DisplayAll();
+                   
                     break;
                 case 3:
-                    Console.Write("Enter the file name: ");
-                    string file = Console.ReadLine();
-                    myJournal.LoadFromFile(file);
+                    
                     break;
                 case 4:
-                    Console.Write("Enter the file name: ");
-                    file = Console.ReadLine();
-                    myJournal.SaveToFile(file);
+                    
                     break;
                 case 5:
                     Console.WriteLine("Goodbye!");
