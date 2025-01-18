@@ -47,13 +47,13 @@ class Program
                     } while (Console.ReadLine() == "1");
                     break;
                 case 2:
-                   
+                    myJournal.DisplayAll();
                     break;
                 case 3:
-                    
+                    Console.WriteLine("What's the file name? ");
                     break;
                 case 4:
-                    
+                    Console.WriteLine("What's the file name? ");
                     break;
                 case 5:
                     Console.WriteLine("Goodbye!");
