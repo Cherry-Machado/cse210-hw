@@ -47,6 +47,7 @@ class Program
             scripture.HideRandomWord();
             Console.Clear();
             Console.WriteLine(scripture.GetScripture());
+            Console.WriteLine("");
             Console.WriteLine("Press Enter to hide more words or type 'quit' to exit.");
         }
 
