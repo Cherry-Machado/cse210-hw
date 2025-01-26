@@ -14,4 +14,11 @@ public class Scripture
             words.Add(new Word(word));
         }
     }
+
+    public string GetScripture()
+    {
+        return $"{reference.GetReference()}: {string.Join(" ", words.Select(w => w.GetDisplayText()))}";
+    }
+
+
 }
