@@ -7,13 +7,14 @@ class Program
     static void Main(string[] args)
     {
         Console.Clear();
-        Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
+        Console.WriteLine("Hello World! This is my ScriptureMemorizer Project.");
         Console.WriteLine("");
 
         // This part is to Show Creativity and Exceed Requirements.
-        // Instead of read the reference and scripture manually, I read them form a .csv file, this
-        // way, user can go to excel or any other program like that, and fill their prefered scriptures
-        // to memorize.
+        // Instead of read the reference and scripture manually, I read them form a .csv file 
+        // (dominio-scriptures.csv), this way, user can go to excel or any other program like 
+        // that, and fill their prefered scriptures to memorize. I also created a new class file
+        // to load the .csv file (ScriptureLoader.cs).
 
         // Get a random record from the CSV file
 
@@ -33,6 +34,8 @@ class Program
         Scripture scripture = new Scripture(reference, "For God so loved the world that He gave His only Son");
         /*Reference reference = new Reference("Proverbs", 3, 5, 6);
         Scripture scripture = new Scripture(reference, "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.");*/
+
+        // From here is the regular program.
 
         Console.WriteLine(scripture.GetScripture());
         Console.WriteLine("");
