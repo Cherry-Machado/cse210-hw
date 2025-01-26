@@ -1,5 +1,6 @@
 using System;
 
+
 public class Scripture
 {
     private Reference reference;
@@ -32,6 +33,7 @@ public class Scripture
         }
     }
 
+ 
     public bool AllWordsHidden()
     {
         return words.All(w => w.IsHidden());

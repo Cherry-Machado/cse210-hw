@@ -5,6 +5,11 @@ public class Word
     private string word;
     private bool isHidden;
 
+    public bool IsHidden()
+
+    {
+        return isHidden;
+    }
     public Word(string word)
     {
         this.word = word;
@@ -29,8 +34,4 @@ public class Word
             return word;
     }
 
-    public bool IsHiden()
-    {
-        return isHidden;
-    }
 }
