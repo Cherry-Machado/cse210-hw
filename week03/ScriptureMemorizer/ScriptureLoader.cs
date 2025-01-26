@@ -10,8 +10,7 @@ public static class ScriptureLoader
         var lines = File.ReadAllLines(filePath).Skip(1);
         var random = new Random();
         var selectedLine = lines.ElementAt(random.Next(lines.Count()));
-
-        var columns = selectedLine.Split(',');
+        var columns = selectedLine.Split(';');
 
         return new Dictionary<string, string>
         {
@@ -22,4 +21,6 @@ public static class ScriptureLoader
             { "scriptureText", columns[4].Trim('"') }
         };
     }
+
+
 }
