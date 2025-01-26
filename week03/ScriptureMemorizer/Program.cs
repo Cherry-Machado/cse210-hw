@@ -33,6 +33,7 @@ class Program
 
         Console.Clear();
         Console.WriteLine(scripture.GetScripture());
+        Console.WriteLine("");
         Console.WriteLine("Press Enter to hide words or type 'quit' to exit.");
 
         while (!scripture.AllWordsHidden())
