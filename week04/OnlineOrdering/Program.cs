@@ -32,7 +32,17 @@ class Program
         order2.AddProduct(product4);
         order2.AddProduct(product5);
 
-        
+        //Display order details
+        Console.WriteLine("Order 1 Details:");
+            Console.WriteLine(order1.GeneratePackingLabel());
+            Console.WriteLine(order1.GenerateShippingLabel());
+            Console.WriteLine($"Total Price: ${order1.CalculateTotalPrice():F2}");
+            Console.WriteLine(new string('-', 50));
+
+            Console.WriteLine("Order 2 Details:");
+            Console.WriteLine(order2.GeneratePackingLabel());
+            Console.WriteLine(order2.GenerateShippingLabel());
+            Console.WriteLine($"Total Price: ${order2.CalculateTotalPrice():F2}");
 
     }
 }
