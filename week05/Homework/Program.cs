@@ -9,9 +9,18 @@ class Program
 
         Assignment assigment = new Assignment("Jose", "Matematicas");
         string juntos = assigment.GetSummary();
-        MathAssignment mathAssignment = new MathAssignment("Roberto", "Quimica", "7.3", "8-9");
         Console.WriteLine(juntos);
-        string mathJuntos = mathAssignment.GetHomeworkList();
+
+        MathAssignment mathAssignment = new MathAssignment("Roberto", "Quimica", "7.3", "8-9");
+        string mathJuntos = mathAssignment.GetSummary();
+        string mathHomeworks = mathAssignment.GetHomeworkList();
         Console.WriteLine(mathJuntos);
+        Console.WriteLine(mathHomeworks);
+        
+        WritingAssignment writingAssignment = new WritingAssignment("Jose", "Leguaje", "Las primeras letras del Espanol");
+        string writingInforJuntos = writingAssignment.GetSummary();
+        string writingJuntos = writingAssignment.GetWritingInformation();
+        Console.WriteLine(writingJuntos);
+        Console.WriteLine(writingInforJuntos);
     }
 }
