@@ -15,4 +15,11 @@ public class WritingAssignment : Assignment
     }
 
     // Creating the GetWritingInformation() Method
+    public string GetWritingInformation()
+    {
+        // Using Getter because studentName is a private attribute on base.
+        string studentName = GetStudentName();
+
+        return $"{_title} by {studentName}";
+    }
 }
