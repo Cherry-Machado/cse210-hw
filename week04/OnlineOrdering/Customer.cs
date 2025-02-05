@@ -13,5 +13,16 @@ public class Customer
         _name = name;
         _address = address;
     }
-    
+
+    //Method to check if the customer lives in the USA
+    public bool LivesInUSA()
+    {
+        return _address.IsInUSA();
+    }
+
+    // Method to get the customer's name and address
+    public string GetCustomerInfo()
+    {
+        return $"{_name}\n{_address.GetFullAddress()}";
+    }
 }
