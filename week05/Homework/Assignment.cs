@@ -11,6 +11,8 @@ public class Assignment
         _studentName = studentName;
         _topic = topic;
     }
+
+    // Here I provide Getters and Setters for the private memeber variables.
     public string GetStudentName()
     {
         return _studentName;
@@ -29,5 +31,11 @@ public class Assignment
         _topic = topic;
     }
 
+    // Here is the GetSumary() Method
+
+    public string GetSummary()
+    {
+        return _studentName + " - "+ _topic;
+    }
     
 }
