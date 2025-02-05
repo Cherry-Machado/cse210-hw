@@ -29,5 +29,19 @@ public class Video
         return _comments.Count;
     }
 
-    // Metho
+    // Method to display video details and its comments
+    public void DisplayVideoDetails()
+    {
+        Console.WriteLine($"Title: {_title}");
+        Console.WriteLine($"Author: {_author}");
+        Console.WriteLine($"Length: {_lengthInSeconds} seconds");
+        Console.WriteLine($"Number of Comments: {GetNumbersOfComments()}");
+
+        Console.WriteLine("Comments:");
+        foreach (var comment in _comments)
+        {
+            comment.DisplayComment();
+        }
+        Console.WriteLine(new string('-', 50));
+    }
 }
