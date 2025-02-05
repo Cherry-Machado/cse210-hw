@@ -10,7 +10,9 @@ class Program
         Assignment assigment = new Assignment("Jose", "Matematicas");
         string name = assigment.GetStudentName();
         string topico = assigment.GetTopic();
+        string juntos = assigment.GetSummary();
         Console.WriteLine(name);
-        Console.WriteLine(topico); 
+        Console.WriteLine(topico);
+        Console.WriteLine(juntos);
     }
 }
