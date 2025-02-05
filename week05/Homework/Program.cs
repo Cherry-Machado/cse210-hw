@@ -8,11 +8,10 @@ class Program
         Console.WriteLine("");
 
         Assignment assigment = new Assignment("Jose", "Matematicas");
-        string name = assigment.GetStudentName();
-        string topico = assigment.GetTopic();
         string juntos = assigment.GetSummary();
-        Console.WriteLine(name);
-        Console.WriteLine(topico);
+        MathAssignment mathAssignment = new MathAssignment("Roberto", "Quimica", "7.3", "8-9" );
         Console.WriteLine(juntos);
+        string mathJuntos = mathAssignment.GetHomeworkList();
+        Console.WriteLine(mathJuntos);
     }
 }
