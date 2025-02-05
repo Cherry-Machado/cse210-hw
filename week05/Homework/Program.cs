@@ -1,4 +1,8 @@
 using System;
+using System.Collections.Generic;
+
+// CSE210 Programming with Classes.
+// Cherry Machado.
 
 class Program
 {
@@ -10,12 +14,14 @@ class Program
         Assignment assigment = new Assignment("Jose", "Matematicas");
         string juntos = assigment.GetSummary();
         Console.WriteLine(juntos);
+        Console.WriteLine("--------------------------");
 
         MathAssignment mathAssignment = new MathAssignment("Roberto", "Quimica", "7.3", "8-9");
         string mathJuntos = mathAssignment.GetSummary();
         string mathHomeworks = mathAssignment.GetHomeworkList();
         Console.WriteLine(mathJuntos);
         Console.WriteLine(mathHomeworks);
+        Console.WriteLine("--------------------------");
         
         WritingAssignment writingAssignment = new WritingAssignment("Jose", "Leguaje", "Las primeras letras del Espanol");
         string writingInforJuntos = writingAssignment.GetSummary();
