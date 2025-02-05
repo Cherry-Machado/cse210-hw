@@ -19,5 +19,15 @@ public class Address
 
     }
 
-    
+    // Method to check if the address is in the USA
+    public bool IsInUSA()
+    {
+        return _country.Equals("USA", StringComparison.OrdinalIgnoreCase);
+    }
+
+    //Method to return the full address as a string
+    public string GetFullAddress()
+    {
+        return $"{_streetAddress}\n{_city}, {_stateOrProvince}\n{_country}";
+    }
 }
