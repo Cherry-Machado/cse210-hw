@@ -23,4 +23,30 @@ class ListingActivity : Activity
         _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
     }
 
+    // Overriding Run() Method.
+
+    public override void Run()
+    {
+        DisplayStartingMessage();
+        string prompt = GetRandomPrompt();
+        Console.WriteLine(prompt);
+        ShowCountDown(5);
+
+        DateTime startTime = DateTime.Now;
+        DateTime futureTime = startTime.AddSeconds(_duration);
+
+        List<string> items = new List<string>();
+
+        while (DateTime.Now < futureTime)
+        {
+            Console.Write("List an item: ");
+            string item = Console.ReadLine();
+            items.Add(item);
+        }   
+
+        _count = items.Count;
+        Console.WriteLine($"You listed {_count} items.");
+        DisplayEndingMessage();
+    }
+
 }
