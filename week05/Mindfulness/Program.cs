@@ -15,7 +15,6 @@ class Program
 
         while (true)
         {   
-            Console.Clear();
             Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Start breathing activity");
             Console.WriteLine("2. Start reflecting activity");
