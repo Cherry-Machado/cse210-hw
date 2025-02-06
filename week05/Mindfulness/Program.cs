@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Threading;
 
 // CSE210 Programming with Classes.
@@ -24,6 +25,26 @@ class Program
             {
                 break;
             }
+
+            Activity activity = null;
+
+            switch(choice)
+            {
+                case "1":
+                    activity = new BreathingActivity();
+                    break;
+                case "2":
+                    activity = new ReflectingActvity();
+                    break;
+                case "3":
+                    activity = new ListingActivity();
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice. Plase try again.");
+                    continue;
+            }
+
+            activity.Run();
             
         }
 
