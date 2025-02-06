@@ -10,7 +10,9 @@ abstract class Activity
 
 
     public void DisplayStartingMessage()
-    {
+    {   
+        
+        Console.WriteLine("");
         Console.WriteLine($"Welcome to the {_name}.");
         Console.WriteLine(_description);
         Console.WriteLine("");

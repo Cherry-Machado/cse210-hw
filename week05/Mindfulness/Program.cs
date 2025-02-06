@@ -12,6 +12,7 @@ class Program
     {
         Console.WriteLine("Hello World! This is the Mindfulness Project.");
         Console.WriteLine("");
+        
 
         while (true)
         {   
@@ -44,8 +45,8 @@ class Program
                     Console.WriteLine("Invalid choice. Plase try again.");
                     continue;
             }
-
             activity.Run();
+            Console.Clear(); //Clear the Screen.
         }
     }
 }
