@@ -56,4 +56,10 @@ class ReflectingActvity : Activity
         Random random = new Random();
         return _prompts[random.Next(_prompts.Count)];
     }
+
+    private string GetRandomQuestion()
+    {
+        Random random = new Random();
+        return _questions[random.Next(_questions.Count)];
+    }
 }
