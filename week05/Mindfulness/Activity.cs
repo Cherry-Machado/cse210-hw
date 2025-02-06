@@ -17,5 +17,12 @@ public void DisplayStartingMessage()
     _duration = int.Parse(Console.ReadLine());
     Console.WriteLine("Prepare to begin...");
     ShowSpinner(3);
-    
 }
+
+public void DisplayEndingMessage()
+{
+    Console.WriteLine("Good job!");
+    Console.WriteLine($"You have completed the {_name} for {_duration} seconds.");
+    ShowSpinner(3);
+}
+
