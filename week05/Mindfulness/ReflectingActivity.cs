@@ -36,7 +36,7 @@ class ReflectingActvity : Activity
         DisplayStartingMessage();
         string prompt = GetRandomPrompt();
         Console.WriteLine(prompt);
-        ShowSpinner(3);
+        ShowSpinner(5);
 
         DateTime startTime = DateTime.Now;
         DateTime futureTime = startTime.AddSeconds(_duration);

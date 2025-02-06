@@ -10,12 +10,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.Clear();
         Console.WriteLine("Hello World! This is the Mindfulness Project.");
         Console.WriteLine("");
 
         while (true)
-        {
+        {   
+            Console.Clear();
             Console.WriteLine("Menu Options:");
             Console.WriteLine("1. Start breathing activity");
             Console.WriteLine("2. Start reflecting activity");
