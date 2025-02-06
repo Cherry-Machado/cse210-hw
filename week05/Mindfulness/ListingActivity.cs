@@ -49,4 +49,10 @@ class ListingActivity : Activity
         DisplayEndingMessage();
     }
 
+    private string GetRandomPrompt()
+    {
+        Random random = new Random();
+        return _prompts[random.Next(_prompts.Count)];
+    }
+
 }
