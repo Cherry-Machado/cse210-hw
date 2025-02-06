@@ -13,9 +13,11 @@ abstract class Activity
     {
         Console.WriteLine($"Welcome to the {_name}.");
         Console.WriteLine(_description);
+        Console.WriteLine("");
     
         Console.WriteLine("Enter the duration of the activity in seconds: ");
         _duration = int.Parse(Console.ReadLine());
+        Console.WriteLine("");
         Console.WriteLine("Prepare to begin...");
         ShowSpinner(3);
     }
