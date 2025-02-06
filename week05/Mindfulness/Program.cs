@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Threading;
 
 // CSE210 Programming with Classes.
@@ -9,6 +10,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.Clear();
         Console.WriteLine("Hello World! This is the Mindfulness Project.");
         Console.WriteLine("");
 

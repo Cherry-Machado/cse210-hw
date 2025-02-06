@@ -39,7 +39,7 @@ class ReflectingActvity : Activity
         ShowSpinner(3);
 
         DateTime startTime = DateTime.Now;
-        DateTime futureTime = startTime.AddMicroseconds(_duration);
+        DateTime futureTime = startTime.AddSeconds(_duration);
 
         while (DateTime.Now < futureTime)
         {
