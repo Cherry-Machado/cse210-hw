@@ -50,7 +50,7 @@ class ReflectingActvity : Activity
 
         DisplayEndingMessage();
     }
-
+    // Creating GetRandomPrompt() Method to create random prompts and take control of counting them in order to avoid repetitions.
     private string GetRandomPrompt()
     {
         Random random = new Random();
