@@ -57,6 +57,7 @@ class ReflectingActvity : Activity
         return _prompts[random.Next(_prompts.Count)];
     }
 
+    //Creating GetRandomQuestion() method and a new random instance.
     private string GetRandomQuestion()
     {
         Random random = new Random();
