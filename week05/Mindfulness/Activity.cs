@@ -26,3 +26,14 @@ public void DisplayEndingMessage()
     ShowSpinner(3);
 }
 
+public void ShowSpinner(int seconds)
+{
+    for (int i = 0; i < seconds; i++)
+    {
+        Console.Write(".");
+        Thread.Sleep(1000);
+    }
+
+    Console.WriteLine();
+}
+
