@@ -45,9 +45,6 @@ class Program
             }
 
             activity.Run();
-            
         }
-
-
     }
 }
