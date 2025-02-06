@@ -49,6 +49,7 @@ class ListingActivity : Activity
         DisplayEndingMessage();
     }
 
+    //Creating GetRandomPrompt Method
     private string GetRandomPrompt()
     {
         Random random = new Random();
