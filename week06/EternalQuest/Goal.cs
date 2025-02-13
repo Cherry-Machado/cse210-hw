@@ -1,4 +1,6 @@
-using System.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace EternalQuest
 {
@@ -9,7 +11,7 @@ namespace EternalQuest
         protected int _points;
     
 
-        protected Goal(string name, string _description, in points)
+        protected Goal(string name, string description, int points)
         {
             _shortName = name;
             _description = description;
