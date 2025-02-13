@@ -6,8 +6,6 @@ namespace EternalQuest
 {
     public class GoalManager
     {
-        public class GoalManager
-    {
         private readonly List<Goal> _goals = new List<Goal>();
         private int _score;
         private int _level;
@@ -163,9 +161,10 @@ namespace EternalQuest
         private void LoadGoals()
         {
             Console.Write("Filename: ");
-            if (!File.Exists(Console.ReadLine())) return;
+            string filename = Console.ReadLine();
+            if (!File.Exists(filename)) return;
             
-            var lines = File.ReadAllLines();
+            var lines = File.ReadAllLines(filename);
             _score = int.Parse(lines[0]);
             _level = _score / 1000;
             
@@ -192,8 +191,5 @@ namespace EternalQuest
                 }
             }
         }
-    }
-
-        
     }
 }

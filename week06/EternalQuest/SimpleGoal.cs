@@ -1,15 +1,14 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace EternalQuest
 {
     public class SimpleGoal : Goal
     {
-        private bool isComplete;
+        private bool _isComplete;
+
         public SimpleGoal(string name, string description, int points) : base(name, description, points)
         {
-            isComplete = false;
+            _isComplete = false;
         }
 
         public override int RecordEvent()
@@ -23,7 +22,7 @@ namespace EternalQuest
         }
 
         public override bool IsComplete() => _isComplete;
-        
+
         public override string GetStringRepresentation() => 
             $"SimpleGoal|{_shortName}|{_description}|{_points}|{_isComplete}";
 

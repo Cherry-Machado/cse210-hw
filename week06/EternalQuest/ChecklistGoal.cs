@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.IO;
 
 namespace EternalQuest
 {
@@ -10,8 +8,8 @@ namespace EternalQuest
         private readonly int _target;
         private readonly int _bonus;
 
-        public ChecklistGoal(string name, string description, int points, 
-                            int target, int bonus) : base(name, description, points)
+        public ChecklistGoal(string name, string description, int points, int target, int bonus) 
+            : base(name, description, points)
         {
             _target = target;
             _bonus = bonus;
@@ -22,7 +20,7 @@ namespace EternalQuest
         {
             _amountCompleted++;
             int points = _points;
-             if (_amountCompleted == _target) points += _bonus;
+            if (_amountCompleted == _target) points += _bonus;
             return points;
         }
 
