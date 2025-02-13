@@ -11,6 +11,7 @@ namespace EternalQuest
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Hello World! This is my EternalQuest Project.");
             Console.WriteLine("");
             new GoalManager().Start();
