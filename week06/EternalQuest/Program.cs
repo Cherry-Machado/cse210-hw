@@ -2,12 +2,16 @@ using System;
 
 // CSE210 Programming with Classes.
 // Cherry Machado.
-class Program
+
+namespace EternalQuest
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is my EternalQuest Project.");
-        Console.WriteLine("");
-        new GoalManager().Start();
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World! This is my EternalQuest Project.");
+            Console.WriteLine("");
+            new GoalManager().Start();
+        }
     }
 }
