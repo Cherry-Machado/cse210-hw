@@ -7,5 +7,15 @@ namespace EternalQuest
         {
             isComplete = false;
         }
+
+        public override int RecordEvent()
+        {
+            if (!_isComplete)
+            {
+                _isComplete = true;
+                return _points;
+            }
+            return 0;
+        }
     }
 }
