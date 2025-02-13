@@ -17,5 +17,13 @@ namespace EternalQuest
             }
             return 0;
         }
+
+        public override bool IsComplete() => _isComplete;
+        
+        public override string GetStringRepresentation() => 
+            $"SimpleGoal|{_shortName}|{_description}|{_points}|{_isComplete}";
+
+        public override string GetDetailsString() => 
+            $"[{(_isComplete ? "X" : " ")}] {_shortName} ({_description})";
     }
 }
