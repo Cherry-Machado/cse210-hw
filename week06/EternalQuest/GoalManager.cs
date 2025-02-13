@@ -30,7 +30,21 @@ public class GoalManager
             Console.WriteLine("6. Quit");
             Console.WriteLine("Select an option: ");
 
-
+            switch (Console.ReadLine())
+            {
+                case "1": CreateGoal(); break;
+                case "2": ListGoals(); break;
+                case "3": SaveGoals(); break;
+                case "4": LoadGoals(); break;
+                case "5": RecordEvent(); break;
+                case "6": return;
+                default: Console.WriteLine("Invalid option!"); break;
+            }
+            Console.WriteLine("\nPress any key to continue...");
+            Console.ReadKey();
+            
         }
+
     }
+    
 }
