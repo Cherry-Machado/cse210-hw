@@ -1,4 +1,0 @@
-2000
-SimpleGoal|Ir mañana a visitar a la hermana maria.|Necesito hacer la visita de ministrante a la Hna. Maria. Para ello debo salir temprano y buscar a Dylan.|100|True
-EternalGoal|Leer las escrituras a diario|Leer las escrituras 1 hora todos los d|100
-ChecklistGoal|Vitas al Templo.|Debo visitar al Templo durante las próximas 10 semanas.|100|500|10|10
