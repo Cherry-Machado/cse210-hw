@@ -5,6 +5,9 @@ using System.Collections.Generic;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
+// Class: CSE 210 : Programación con clases
+// Student: Cherry Machado
+
 class Program
 {
     static void Main(string[] args)
