@@ -14,13 +14,13 @@ class Program
 
         List<Shape> shapes = new List<Shape>();
 
-        Circle s3 = new Circle("Green", 6);
+        Circle s3 = new Circle("Green", 4);
         shapes.Add(s3);
 
-        Rectangle s2 = new Rectangle("Blue", 4, 5);
+        Rectangle s2 = new Rectangle("Blue", 7, 8);
         shapes.Add(s2);
 
-        Square s1 = new Square("Red", 3);
+        Square s1 = new Square("Red", 5);
         shapes.Add(s1);
 
         foreach (Shape s in shapes)
