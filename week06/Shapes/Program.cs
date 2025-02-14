@@ -1,5 +1,7 @@
 using System;
 using System.Drawing;
+using System.IO;
+using System.Collections.Generic;
 using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
@@ -12,16 +14,16 @@ class Program
 
         List<Shape> shapes = new List<Shape>();
 
-        Square s1 = new Square("Red", 3);
-        shapes.Add(s1);
+        Circle s3 = new Circle("Green", 6);
+        shapes.Add(s3);
 
         Rectangle s2 = new Rectangle("Blue", 4, 5);
         shapes.Add(s2);
 
-        CriticalHandle s3 = new CriticalHandle("Green", 6);
-        shapes.Add(s3);
+        Square s1 = new Square("Red", 3);
+        shapes.Add(s1);
 
-        foreach (ArrayShape s in shapes)
+        foreach (Shape s in shapes)
         {
             //GetColor method from the base class
             string color = s.GetColor();
