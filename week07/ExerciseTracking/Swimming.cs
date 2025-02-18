@@ -7,7 +7,7 @@ public class Swimming : Activity
 {
     private int laps; //This is going to get the numbers of laps
 
-    public Swimming(DateOnly date, int durationInMinutes, int laps) : base(date, durationInMinutes)
+    public Swimming(DateTime date, int durationInMinutes, int laps) : base(date, durationInMinutes)
     {
         this.laps = laps;
         
