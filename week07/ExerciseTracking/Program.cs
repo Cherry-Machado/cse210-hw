@@ -16,5 +16,11 @@ class Program
             new Swimming(new DateTime(2024, 11, 5), 60, 40)
         };
 
+        // Iterate through the list and display summaries
+        foreach (var activity in activities)
+        {
+            Console.WriteLine(activity.GetSummary());
+        }
+
     }
 }
