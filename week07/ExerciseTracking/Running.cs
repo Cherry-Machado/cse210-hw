@@ -12,5 +12,7 @@ public class Running : Activity
 
     //Here are the override methods
     public override double GetDistance() => distance;
+    public override double GetSpeed() => (distance / DurationInMinutes) * 60;
+    public override double GetPace() => DurationInMinutes / distance;
 
 }
