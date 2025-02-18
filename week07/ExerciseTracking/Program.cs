@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 
+// CSE210 Programming with Classes.
+// Cherry Machado.
+
 class Program
 {
     static void Main(string[] args)
