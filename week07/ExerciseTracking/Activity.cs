@@ -12,7 +12,7 @@ public abstract class Activity
     //Constructor
     public Activity(DateTime date, int durationInMinutes)
     {
-        this.date;
+        this.date = date;
         this.durationInMinutes = durationInMinutes;
     }
 
